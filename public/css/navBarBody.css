@@ -7,7 +7,7 @@
 {
     border: 1.5px solid black;
     border-radius: 3px;
-    background-color: gray;
+    background-color: #191970;
     padding-bottom: 0.2%;
     padding-top: 0.2%;
     margin-bottom: 50px;
@@ -37,5 +37,5 @@
 
 body {
     font-family: 'Calibri', sans-serif;
-    background-color:#AED6F1;
+    background-color:#CAE1FF;
 }
