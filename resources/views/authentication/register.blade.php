@@ -4,7 +4,7 @@
 @section('header', 'Sign Up')
 
 @section('content')
-    <h1>Sign Up</h1>
+    <h1>Sign Up Page</h1>
         <p>Already have an account? Please <a href="/login">Login</a>.</p>
     <form method="post" action="/signup">
         @csrf

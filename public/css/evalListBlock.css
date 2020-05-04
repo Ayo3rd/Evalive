@@ -12,6 +12,16 @@ p.greenCover
     margin-left: 5px; 
     color:white;
 }
+.greenCov
+{
+    background-color: #98FB98;
+    border-radius: 4px;
+    border: 1px solid #3CB371;
+    margin-left: 5px; 
+    color:black;
+    width:30%;
+}
+
 .redFont
 {
     color: red;

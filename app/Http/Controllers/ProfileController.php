@@ -44,6 +44,37 @@ class ProfileController extends Controller
         ]);
     }
 
+    public function like($id)
+    {
+        $user = Auth::user();
+        $currNum = DB::table('evaluations')
+            ->select('like')
+            ->where('id', '=', $id)
+            ->first();
+        $newNum = strval($currNum->like + 1);
+
+         DB::table('evaluations')
+            ->where('id','=', $id)
+            ->update([
+                'like' => $newNum
+            ]);
+    }
+
+     public function dislike($id)
+    {
+        $user = Auth::user();
+        $currNum = DB::table('evaluations')
+            ->select('dislike')
+            ->where('id', '=', $id)
+            ->first();
+        $newNum = strval($currNum->dislike + 1);
+
+         DB::table('evaluations')
+            ->where('id','=', $id)
+            ->update([
+                'dislike' => $newNum
+            ]);
+    }
 
 
 }

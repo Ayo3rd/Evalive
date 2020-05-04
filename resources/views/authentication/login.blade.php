@@ -4,6 +4,7 @@
 @section('header', 'Login')
 
 @section('content')
+<h1>Login Page</h1>
   <p>Don't have an account? Please <a href="/signup">Signup</a></p>
   <form method="post" action="/login">
     @csrf
@@ -17,4 +18,12 @@
     </div>
     <input type="submit" value="Login" class="btn btn-primary">
   </form>
+
+<hr>
+<div class="greenCov">
+  <p>Two accounts Created:</p>
+  <p>Otegbade@usc.edu, welovetang</p>
+  <p>ope.otegbade@gmail.com, welovetang</p>
+</div>
+  
 @endsection

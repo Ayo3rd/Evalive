@@ -37,6 +37,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', 'ProfileController@index')->name('profile');
     Route::get('/profile/{id}', 'ProfileController@show')->name('course');
 
+
+
+    Route::get('/profile/{id}/like', 'ProfileController@like');
+    Route::get('/profile/{id}/dislike', 'ProfileController@dislike');
+
+
+
+
     Route::get('/NewEvaluation/create','NewEvalController@create');
     Route::post('/NewEvaluation','NewEvalController@store');
 
@@ -48,6 +56,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/myEvaluations/{id}/edit', 'EvalController@edit');
     Route::post('/myEvaluations/{id}/edit', 'EvalController@update');
+
+
 
 
 

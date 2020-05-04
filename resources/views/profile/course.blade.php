@@ -42,21 +42,21 @@
                             <span class="m-b-15 d-block">{{$evaluation->evaluation}}</span>
                             <div class="comment-footer"> 
                                 @if($evaluation->edited)
-                                <p class="greenFont text-muted float-right">(Edited)
+                                <p class="greenCover text-muted float-right">(Edited)
                                 </p>
                                 @endif
                             	<span class="text-muted float-right">{{date_format(date_create($evaluation->updated_at),'h:i A | M, j Y')}}
                                 </span> 
-                                <div class="reaction like">
+                                <div data-eval="{{$evaluation->id}}" class="reaction like">
                                     <a>
                                         <i class="fa fa-thumbs-o-up"></i>  Like
-                                        <input class="qty1" name="qty1" readonly="readonly" type="text" value="0" />
+                                        <input class="qty1" name="qty1" readonly="readonly" type="text" value="{{$evaluation->like}}" />
                                     </a>
                                 </div>
-                                <div class="reaction dislike">
+                                <div data-eval="{{$evaluation->id}}" class="reaction dislike">
                                     <a>
                                         <i class="fa fa-thumbs-o-down"></i> Dislike 
-                                        <input class="qty2"  name="qty2" readonly="readonly" type="text" value="0" />
+                                        <input class="qty2"  name="qty2" readonly="readonly" type="text" value="{{$evaluation->dislike}}" />
                                     </a>
                                 </div>    
                        		</div>
