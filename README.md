@@ -1,4 +1,4 @@
-# ITP 405 FINAL PROJECT: EvaLive 
+# EvaLive 
 
 
 ## Link to Site: https://ayo-evalive-app.herokuapp.com/
